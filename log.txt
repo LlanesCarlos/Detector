@@ -1,3 +1,5 @@
-DEBUG:root:Duración en segundos: 0.2428912 Tue, 31/01/2023, 03:53:15
 DEBUG:root:Inicio: 03:58:43; fin: 03:58:43
 DEBUG:root:Inicio: 03:59:25; fin: 03:59:26
+DEBUG:root:Inicio: 19:29:20; fin: 19:29:20
+DEBUG:root:Inicio: 19:29:21; fin: 19:29:21
+DEBUG:root:Inicio: 19:31:30; fin: 19:31:30

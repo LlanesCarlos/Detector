@@ -25,7 +25,7 @@ puntaje = 0
 grosor = 2
 pred_der = [99]
 pred_izq = [99]
-durmió = False
+dormido = False
 
 while True:
     ret, frame = captura.read()
@@ -86,8 +86,8 @@ while True:
     if puntaje >= 15:
         puntaje = 15
         # la persona está durmiendo, entonces suena la alarma
-        cv2.imwrite(os.path.join(direc, 'image.jpg'), frame)
-        durmió = True
+        #cv2.imwrite(os.path.join(direc, 'image.jpg'), frame)
+        dormido = True
         #inicio = perf_counter()
         hora1 = datetime.today()
         hora_inicio = hora1.strftime("%H:%M:%S")
@@ -116,7 +116,7 @@ while True:
             logging.basicConfig(filename="log.txt", level=logging.DEBUG)
             logging.debug("Inicio: " + hora_inicio + "; fin: " + hora_fin)
             #logging.debug("Duración en segundos: " + duración_txt + " " + fecha)
-            durmió = False
+            dormido = False
     cv2.imshow('frame', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
